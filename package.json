@@ -7,8 +7,8 @@
         "shell": "firebase functions:shell",
         "start": "npm run shell",
         "deploy": "firebase deploy --only functions",
-        "test": "mocha functions/tests/findTwoBeers.test.js --exit",
-        "coverage": "nyc --reporter=text npm test",
+        "test": "mocha functions/tests/findTwoBeers.js --exit",
+        "coverage": "nyc --reporter=lcov --reporter=text npm test",
         "logs": "firebase functions:log"
     },
     "engines": {
@@ -17,6 +17,9 @@
     "main": "index.js",
     "dependencies": {
         "chai": "^4.3.4",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "firebase-admin": "^9.8.0",
         "mocha": "^8.4.0",
         "morgan": "^1.10.0",
         "nyc": "^15.1.0",

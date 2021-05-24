@@ -3,7 +3,6 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
 const app = express();
-
 admin.initializeApp({
     credential: admin.credential.applicationDefault(),
     databaseURL: 'https://siempre-en-casa-f035d.firebaseio.com',

@@ -1,4 +1,0 @@
-firebase init emulators (seleccionar Functions) (presionar siempre enter y Yes)
-firebase emulators:start
-
-set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\user\Downloads\credentials-2.json
