@@ -23,7 +23,7 @@ const validateNotPositiveBeers = (beersJSON) => {
     return beers.some((b) => b <= 0);
 };
 
-const response = (req, res) => {
+const handler = (req, res) => {
     try {
         const { beers, target } = req.body;
         if (beers && target) {
@@ -39,7 +39,7 @@ const response = (req, res) => {
     }
 };
 
-router.post('/', response);
+router.post('/', handler);
 
 // Módulos y funciones exportadas
 module.exports = router;
