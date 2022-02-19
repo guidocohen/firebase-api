@@ -1,6 +1,6 @@
 # REST API - NodeJS, ExpressJS y Firebase de Google
 
-**Back-End Challenge**
+**[Back-End Challenge](https://github.com/ZXVentures/ar-sec-coding-challenge/blob/main/back-end.md)**
 
 La REST API se podrá consumir directamente desde el servicio con la "Function" alojada y desplegada en "Firebase de Google Cloud", cuya URL es:
 ```
@@ -45,8 +45,21 @@ Enviar una petición POST a la URL:
 http://localhost:5000/siempre-en-casa-f035d/us-central1/app/api/findTwoBeers
 ```
 
-Por ejemplo, se puede realizar con Postman Agent configurando el "Headers" en "Content-Type: application/json" y enviando el JSON dentro del "Body".
+Por ejemplo, se puede realizar con Postman Agent configurando el "Headers" en "Content-Type: application/json" y enviando el siguiente JSON dentro del "Body":
 
+```
+{
+  "beers": "[15, 20, 25, 39, 12, 18, 19, 21]", 
+  "target": "35"
+}
+```
+
+Response (status 200):
+```
+{
+  index: [0, 1]
+}
+```
 
 ## Pruebas automatizadas ⚙️
 
